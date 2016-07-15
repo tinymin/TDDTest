@@ -23,5 +23,7 @@ public abstract class Money
         return new Franc(amount);
     }
 
-    abstract public Money times(int multiplier);
+    public abstract Money times(int multiplier);
+
+    public abstract String currentcy();
 }

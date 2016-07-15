@@ -14,4 +14,10 @@ public class Dollar extends Money
     {
         return new Dollar(amount * multiplier);
     }
+
+    @Override
+    public String currentcy()
+    {
+        return "USD";
+    }
 }
