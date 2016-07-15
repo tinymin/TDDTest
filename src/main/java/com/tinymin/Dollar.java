@@ -5,9 +5,12 @@ package com.tinymin;
  */
 public class Dollar extends Money
 {
+    private String currentcy;
+
     public Dollar(int amount)
     {
         this.amount = amount;
+        this.currentcy = "USD";
     }
 
     public Money times(int multiplier)
@@ -18,6 +21,6 @@ public class Dollar extends Money
     @Override
     public String currentcy()
     {
-        return "USD";
+        return currentcy;
     }
 }
