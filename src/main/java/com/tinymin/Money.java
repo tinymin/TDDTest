@@ -6,6 +6,7 @@ package com.tinymin;
 public abstract class Money
 {
     protected int amount;
+    protected String currency;
 
     public boolean equals(Object obj)
     {
@@ -23,7 +24,10 @@ public abstract class Money
         return new Franc(amount);
     }
 
-    public abstract Money times(int multiplier);
+    public String currentcy()
+    {
+        return currency;
+    }
 
-    public abstract String currentcy();
+    public abstract Money times(int multiplier);
 }
