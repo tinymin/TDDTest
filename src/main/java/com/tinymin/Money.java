@@ -8,6 +8,12 @@ public abstract class Money
     protected int amount;
     protected String currency;
 
+    public Money(int amount, String currency)
+    {
+        this.amount = amount;
+        this.currency = currency;
+    }
+
     public boolean equals(Object obj)
     {
         Money money = (Money)obj;
