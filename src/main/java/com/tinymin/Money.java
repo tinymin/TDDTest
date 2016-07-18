@@ -3,7 +3,7 @@ package com.tinymin;
 /**
  * Created by tinymin on 16. 7. 14..
  */
-public abstract class Money
+public class Money
 {
     protected int amount;
     protected String currency;
@@ -35,5 +35,8 @@ public abstract class Money
         return currency;
     }
 
-    public abstract Money times(int multiplier);
+    public Money times(int multiplier)
+    {
+        return null;
+    }
 }
