@@ -17,7 +17,7 @@ public class Money
     public boolean equals(Object obj)
     {
         Money money = (Money)obj;
-        return (getClass().equals(money.getClass())) && (amount == money.amount);
+        return (getCurrentcy().equals(money.currency)) && (amount == money.amount);
     }
 
     public static Dollar dollar(int amount)
@@ -30,7 +30,7 @@ public class Money
         return new Franc(amount, "CHF");
     }
 
-    public String currentcy()
+    public String getCurrentcy()
     {
         return currency;
     }

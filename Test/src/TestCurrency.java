@@ -1,3 +1,4 @@
+import com.tinymin.Franc;
 import com.tinymin.Money;
 import org.junit.Test;
 
@@ -39,7 +40,13 @@ public class TestCurrency
     @Test
     public void testCurrentcy() throws Exception
     {
-        assertEquals("USD", Money.dollar(1).currentcy());
-        assertEquals("CHF", Money.franc(1).currentcy());
+        assertEquals("USD", Money.dollar(1).getCurrentcy());
+        assertEquals("CHF", Money.franc(1).getCurrentcy());
+    }
+
+    @Test
+    public void testDifferentClassEquality() throws Exception
+    {
+        assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
     }
 }
