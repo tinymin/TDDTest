@@ -39,4 +39,10 @@ public class Money
     {
         return null;
     }
+
+    @Override
+    public String toString()
+    {
+        return amount + ", " + currency;
+    }
 }
