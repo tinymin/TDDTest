@@ -45,4 +45,9 @@ public class Money
     {
         return amount + ", " + currency;
     }
+
+    public Money plus(Money addend)
+    {
+        return new Money(amount + addend.amount, currency);
+    }
 }
