@@ -9,4 +9,9 @@ public class Bank
     {
         return source.reduce(to);
     }
+
+    public void addRate(String from, String to, int rate)
+    {
+
+    }
 }
